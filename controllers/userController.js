@@ -6,7 +6,6 @@ import bcryptjs from "bcryptjs";
 // Obtener todos los usuarios
 const getAllUsers = async (req, res) => {
   try {
-    console.log("HOLAAAAAAAAAAAAAAAAAAAAAAAA");
     const users = await userService.getAllUsers();
     res.status(200).json(users);
   } catch (error) {

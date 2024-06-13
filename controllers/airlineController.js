@@ -23,9 +23,10 @@ const getById = async (req, res) => {
 
 // Crear un nuevo registro
 const create = async (req, res) => {
+  console.log(req.body)
   try {
     const data = await airlineService.create(req.body);
-    res.status(201).json(data);
+    res.status(200).json(data);
   } catch (error) {
     res.status(400).json({ error: error.message });
   }

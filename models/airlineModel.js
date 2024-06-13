@@ -17,9 +17,13 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  logo: {
+  phoneNumber: {
     type: String,
-    required: false,
+    required: true,
+  },
+  logoUrl:{
+    type: Object,
+    required: false
   },
 
   

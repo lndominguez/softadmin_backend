@@ -62,8 +62,8 @@ async function register(req, res) {
 
 
 async function login(req, res) {
-    console.log("***************** LOGIN ****************")
-    console.log("access_token :",req.body.googleAccessToken)
+    // console.log("***************** LOGIN ****************")
+    // console.log("access_token :",req.body)
     if (req.body.googleAccessToken) {
         axios.get("https://www.googleapis.com/oauth2/v3/userinfo", {
             headers: {
